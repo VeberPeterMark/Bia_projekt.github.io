@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
+    <script>
+
+var url = 'kepek/Negativitas/';
+var url2='kepek/Hely/';
+$(document).ready(function() {
+  $('#kep_in_1').append("  <div class='carousel-item active'> <img src='"+url+"/01.jpg"+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+  $('#kep_in_2').append("  <div class='carousel-item active'> <img src='"+url2+"/01.jpg"+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+    for (let i = 2; i <= 38; i++) {
+     var egyjegy= i.toString().length;
+      if(egyjegy <2)
+      {
+        var j = "0"+i
+        src = url+j+".jpg";
+        $('#kep_in_1').append("  <div class='carousel-item '> <img src='"+src+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+      }
+      else{
+      
+        src = url+i+".jpg";
+        $('#kep_in_1').append("  <div class='carousel-item '> <img src='"+src+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+      }
+  }
+  for (let i = 2; i <= 21; i++) {
+     var egyjegy= i.toString().length;
+      if(egyjegy <2)
+      {
+        var j = "0"+i
+        src = url2+j+".jpg";
+        $('#kep_in_2').append("  <div class='carousel-item '> <img src='"+src+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+      }
+      else{
+      
+        src = url2+i+".jpg";
+        $('#kep_in_2').append("  <div class='carousel-item '> <img src='"+src+"' class='rounded kepk img-fluid  d-block ' alt=''> </div>");
+      }
+  }
+});
+
+      </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm text-light ">
+
+        
+        <!-- Links -->
+        <ul class="navbar-nav h2">
+          <li class="nav-item">
+            <a class="nav-link f " href="#">instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link f " href="#">facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link f " href="#">egyéb</a>
+          </li>
+        </ul>
+      
+      
+          <!-- Links -->
+          <ul class="navbar-nav  h2 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link f " href="index.html">Fö oldal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link f " href="munka.html">Munkáim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link f " href="kapcs.html">Kapcsolatba lépés</a>
+            </li>
+          </ul>
+        
+    </nav>
+    <div class="container-fluid text-center text-light display-1">
+     <b>Bianka Czettler </b> 
+    </div>
+        
+        <div class="container-fluid text-center ptop-s f  pdown  " id="munka">
+            <div class="row gx-5 offset-md-2">
+              <div class="col-lg-4">
+              <h1> Negativitás:</h1>  <br>
+                <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner" id="kep_in_1">
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+              </div>
+              <div class="col-lg-4">
+               <h2>Hely szelleme Újlipót városban:</h2>  <br>
+                <div id="carouselExampleControls2" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner" id="kep_in_2">
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+          </div>
+       
+       
+
+       
+        </div>
+        
+</body>
+</html>
